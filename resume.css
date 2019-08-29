@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	margin-left: 100px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	padding-left: 20px;
+}
+
+h1 {
+	font-size: 23px;
+	letter-spacing: 2px;
+	margin-top: 50px;
+}
+
+ul {
+	list-style: none;
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+li {
+	margin-bottom: 15px;
+	letter-spacing: 0.5px;
+}
+
+.copyright {
+	font-size: 12px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+main {
+	width: 50%;
+	height: auto;
+	margin-top: 80px;
+	margin-left: 430px;
+	margin-right: 200px;
+}
+
+img {
+	width: 300px;
+	height: 450px;
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 0;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		height: auto;
+	    position: fixed;
+	    margin-left: 0;
+		margin-right: 0;
+		margin-top: -220px;
+	    margin-bottom: 0;
+		padding-left: 10px;
+		padding-right: 5px;
+	}
+
+	.copyright {
+		display: none;
+	}
+
+	h1 {
+		font-size: 23px;
+		letter-spacing: 2px;
+		margin-top: -2px;
+	}
+
+	nav {
+		width: 40%;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 0;
+	}
+
+	main {
+		margin: 0;
+	}
+
+	.resume {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 200px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 30px;
+		padding-left: 5px;
+		padding-right: 5px;
+		position: inherit;
+	}
+
+	h1 {
+		font-size: 18px;
+	}
+
+	nav {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: 5px;
+	}
+
+	ul {
+		font-size: 15px;
+	}
+
+	.resume {
+		margin-top: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
